@@ -1,0 +1,233 @@
+import type { PizzaSpecialty } from './types';
+
+export const pizzaMenu: PizzaSpecialty[] = [
+  {
+    id: 1,
+    name: 'Margherita',
+    description: 'Classic tomato sauce, fresh mozzarella, and basil.',
+    toppings: ['Tomato Sauce', 'Mozzarella', 'Basil'],
+    sizes: {
+      small: 8.99,
+      medium: 11.99,
+      large: 13.99,
+    },
+  },
+  {
+    id: 2,
+    name: 'Pepperoni',
+    description: 'Loaded with mozzarella and classic pepperoni.',
+    toppings: ['Tomato Sauce', 'Mozzarella', 'Pepperoni'],
+    sizes: {
+      small: 9.99,
+      medium: 12.99,
+      large: 14.99,
+    },
+  },
+  {
+    id: 3,
+    name: 'BBQ Chicken',
+    description: 'Tangy BBQ sauce, grilled chicken, red onions, and cilantro.',
+    toppings: ['BBQ Sauce', 'Mozzarella', 'Chicken', 'Red Onion', 'Cilantro'],
+    sizes: {
+      small: 10.99,
+      medium: 13.99,
+      large: 15.99,
+    },
+  },
+  {
+    id: 4,
+    name: 'Hawaiian',
+    description: 'Ham, pineapple, and mozzarella over tomato sauce.',
+    toppings: ['Tomato Sauce', 'Mozzarella', 'Ham', 'Pineapple'],
+    sizes: {
+      small: 9.99,
+      medium: 12.99,
+      large: 14.99,
+    },
+  },
+  {
+    id: 5,
+    name: 'Veggie Supreme',
+    description:
+      'Packed with bell peppers, onions, mushrooms, olives, and spinach.',
+    toppings: [
+      'Tomato Sauce',
+      'Mozzarella',
+      'Bell Peppers',
+      'Onions',
+      'Mushrooms',
+      'Olives',
+      'Spinach',
+    ],
+    sizes: {
+      small: 9.99,
+      medium: 12.99,
+      large: 14.99,
+    },
+  },
+  {
+    id: 6,
+    name: 'Meat Lovers',
+    description: 'Pepperoni, sausage, bacon, and ham.',
+    toppings: [
+      'Tomato Sauce',
+      'Mozzarella',
+      'Pepperoni',
+      'Sausage',
+      'Bacon',
+      'Ham',
+    ],
+    sizes: {
+      small: 11.99,
+      medium: 14.99,
+      large: 16.99,
+    },
+  },
+  {
+    id: 7,
+    name: 'Buffalo Chicken',
+    description: 'Spicy buffalo sauce, chicken, red onions, and ranch drizzle.',
+    toppings: ['Buffalo Sauce', 'Mozzarella', 'Chicken', 'Red Onion', 'Ranch'],
+    sizes: {
+      small: 10.99,
+      medium: 13.99,
+      large: 15.99,
+    },
+  },
+  {
+    id: 8,
+    name: 'Four Cheese',
+    description: 'Mozzarella, cheddar, provolone, and parmesan.',
+    toppings: [
+      'Tomato Sauce',
+      'Mozzarella',
+      'Cheddar',
+      'Provolone',
+      'Parmesan',
+    ],
+    sizes: {
+      small: 9.99,
+      medium: 12.99,
+      large: 14.99,
+    },
+  },
+  {
+    id: 9,
+    name: 'Mediterranean',
+    description: 'Olives, feta, spinach, tomatoes, and oregano.',
+    toppings: [
+      'Tomato Sauce',
+      'Mozzarella',
+      'Feta',
+      'Olives',
+      'Spinach',
+      'Tomatoes',
+      'Oregano',
+    ],
+    sizes: {
+      small: 10.49,
+      medium: 13.49,
+      large: 15.49,
+    },
+  },
+  {
+    id: 10,
+    name: 'White Pizza',
+    description: 'Garlic cream sauce, mozzarella, ricotta, and spinach.',
+    toppings: ['Garlic Cream Sauce', 'Mozzarella', 'Ricotta', 'Spinach'],
+    sizes: {
+      small: 9.99,
+      medium: 12.99,
+      large: 14.99,
+    },
+  },
+  {
+    id: 11,
+    name: 'Truffle Mushroom',
+    description: 'Truffle oil, mushrooms, mozzarella, and parmesan.',
+    toppings: [
+      'White Sauce',
+      'Mozzarella',
+      'Mushrooms',
+      'Parmesan',
+      'Truffle Oil',
+    ],
+    sizes: {
+      small: 11.49,
+      medium: 14.49,
+      large: 16.49,
+    },
+  },
+  {
+    id: 12,
+    name: 'Taco Pizza',
+    description:
+      'Seasoned beef, cheddar, lettuce, tomato, and sour cream drizzle.',
+    toppings: [
+      'Tomato Sauce',
+      'Mozzarella',
+      'Beef',
+      'Cheddar',
+      'Lettuce',
+      'Tomato',
+      'Sour Cream',
+    ],
+    sizes: {
+      small: 10.99,
+      medium: 13.99,
+      large: 15.99,
+    },
+  },
+  {
+    id: 13,
+    name: 'Philly Cheesesteak',
+    description: 'Steak, onions, peppers, mozzarella, and provolone.',
+    toppings: [
+      'Garlic Cream Sauce',
+      'Mozzarella',
+      'Steak',
+      'Onions',
+      'Peppers',
+      'Provolone',
+    ],
+    sizes: {
+      small: 11.99,
+      medium: 14.99,
+      large: 16.99,
+    },
+  },
+  {
+    id: 14,
+    name: 'Caprese',
+    description: 'Fresh mozzarella, tomato slices, basil, and balsamic glaze.',
+    toppings: [
+      'Tomato Sauce',
+      'Fresh Mozzarella',
+      'Tomatoes',
+      'Basil',
+      'Balsamic Glaze',
+    ],
+    sizes: {
+      small: 10.49,
+      medium: 13.49,
+      large: 15.49,
+    },
+  },
+  {
+    id: 15,
+    name: 'Spicy Italian',
+    description: 'Pepperoni, spicy sausage, red chili flakes, and mozzarella.',
+    toppings: [
+      'Tomato Sauce',
+      'Mozzarella',
+      'Pepperoni',
+      'Spicy Sausage',
+      'Chili Flakes',
+    ],
+    sizes: {
+      small: 10.99,
+      medium: 13.99,
+      large: 15.99,
+    },
+  },
+];
