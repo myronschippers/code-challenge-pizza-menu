@@ -16,10 +16,11 @@ import {
   Typography,
 } from '@mui/material';
 
+import { Cart } from '@/components/ui/Cart';
+
 import BarTitle from './BarTitle';
 import { PAGES_NAV } from './constants';
 import type { HeaderProps } from './types';
-import { Cart } from '@/components/ui/Cart';
 
 const Header: FC<HeaderProps> = ({}) => {
   const router = useRouter();
