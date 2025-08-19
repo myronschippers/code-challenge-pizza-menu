@@ -9,7 +9,7 @@ generateTemplateFiles([
     },
     stringReplacers: ['__name__'],
     output: {
-      path: './src/components/templates/__name__(pascalCase)',
+      path: './src/components/features/__name__(pascalCase)',
     },
   },
   {
@@ -35,12 +35,12 @@ generateTemplateFiles([
     },
   },
   {
-    option: 'Page API Route',
+    option: 'API Basic Route',
     defaultCase: '(pascalCase)',
     entry: {
-      folderPath: './tools/templates/page',
+      folderPath: './tools/templates/api',
     },
-    stringReplacers: ['__name__', '__route__'],
+    stringReplacers: ['__route__'],
     output: {
       path: './src/app/api/__route__(kebabCase)',
     },

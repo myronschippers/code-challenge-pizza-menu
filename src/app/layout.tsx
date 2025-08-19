@@ -1,8 +1,9 @@
 import type { Metadata } from 'next';
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter';
 
-import { RootThemeWrap } from '@/theme/RootThemeWrap';
+import { QueryProvider } from '@/components/features/QueryProvider';
 import { SandwichStack } from '@/components/templates/SandwichStack';
+import { RootThemeWrap } from '@/theme/RootThemeWrap';
 
 import '@/app/globals.css';
 
@@ -26,9 +27,11 @@ export default function RootLayout({
           as Next.js is streaming chunks of the .html page to the client
         */}
         <AppRouterCacheProvider>
-          <RootThemeWrap>
-            <SandwichStack>{children}</SandwichStack>
-          </RootThemeWrap>
+          <QueryProvider>
+            <RootThemeWrap>
+              <SandwichStack>{children}</SandwichStack>
+            </RootThemeWrap>
+          </QueryProvider>
         </AppRouterCacheProvider>
       </body>
     </html>
