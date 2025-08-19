@@ -16,7 +16,7 @@ import {
   Typography,
 } from '@mui/material';
 
-import { Cart } from '@/components/ui/Cart';
+import { CartTracker } from '@/components/features/CartTracker';
 
 import BarTitle from './BarTitle';
 import { PAGES_NAV } from './constants';
@@ -97,7 +97,7 @@ const Header: FC<HeaderProps> = ({}) => {
           </Box>
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Order Cart">
-              <Cart totalItems={2} />
+              <CartTracker />
             </Tooltip>
           </Box>
         </Toolbar>

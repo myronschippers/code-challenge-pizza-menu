@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 
-import { cartList, pizzaMenu, type CartPizza } from '@/data';
+import { cartList, pizzaMenu, type CartResponse, type CartPizza } from '@/data';
 
 export async function GET() {
   try {
@@ -16,7 +16,7 @@ export async function GET() {
         unitCost: matchedPizza?.sizes[cartItem.size],
       };
     });
-    return NextResponse.json({ data: cart });
+    return NextResponse.json<CartResponse>({ data: cart });
   } catch (err) {
     return NextResponse.json(
       {
