@@ -11,7 +11,7 @@ const Footer: FC<FooterProps> = ({}) => {
   return (
     <Stack direction="row" justifyContent="center" p={3}>
       <Typography variant="caption" component="p">
-        &copy; {currentYear} Pizza Place
+        &copy; {currentYear} Pizza Palace
       </Typography>
     </Stack>
   );
