@@ -34,4 +34,26 @@ generateTemplateFiles([
       path: './src/components/ui/__name__(pascalCase)',
     },
   },
+  {
+    option: 'Page API Route',
+    defaultCase: '(pascalCase)',
+    entry: {
+      folderPath: './tools/templates/page',
+    },
+    stringReplacers: ['__name__', '__route__'],
+    output: {
+      path: './src/app/api/__route__(kebabCase)',
+    },
+  },
+  {
+    option: 'Page Basic Route',
+    defaultCase: '(pascalCase)',
+    entry: {
+      folderPath: './tools/templates/page',
+    },
+    stringReplacers: ['__name__', '__route__'],
+    output: {
+      path: './src/app/__route__(kebabCase)',
+    },
+  },
 ]);
