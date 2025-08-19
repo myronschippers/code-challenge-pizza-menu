@@ -18,7 +18,6 @@ import type { PizzaMenuListProps } from './types';
 
 async function getPizzas(): Promise<PizzasGetResponse> {
   const pizzasResponse = await fetch('/api/pizzas');
-  console.log('!!!API GET Pizzas:', pizzasResponse);
   return await pizzasResponse.json();
 }
 
@@ -29,7 +28,12 @@ const PizzaMenuList: FC<PizzaMenuListProps> = ({}) => {
   });
 
   return (
-    <Stack direction="column" spacing={3}>
+    <Stack
+      direction={{ xs: 'column', md: 'row' }}
+      flexWrap="wrap"
+      justifyContent="center"
+      gap={3}
+    >
       {isFetching && (
         <Stack direction="row" justifyContent="center">
           <CircularProgress />

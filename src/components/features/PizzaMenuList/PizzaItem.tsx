@@ -28,7 +28,7 @@ const PizzaItem: FC<PizzaItemProps> = ({ pizzaId, name, description }) => {
   };
 
   return (
-    <Card>
+    <Card sx={{ width: 600, maxWidth: '100%' }}>
       <CardActionArea onClick={handleClickPizza}>
         <Stack direction="row">
           <CardMedia
@@ -48,14 +48,16 @@ const PizzaItem: FC<PizzaItemProps> = ({ pizzaId, name, description }) => {
         </Stack>
       </CardActionArea>
       <CardActions>
-        <Button
-          size="small"
-          color="primary"
-          variant="contained"
-          onClick={handleAddPizzaToCart}
-        >
-          Add
-        </Button>
+        <Stack direction="row" justifyContent="flex-end" sx={{ width: '100%' }}>
+          <Button
+            size="small"
+            color="primary"
+            variant="contained"
+            onClick={handleAddPizzaToCart}
+          >
+            Add
+          </Button>
+        </Stack>
       </CardActions>
     </Card>
   );
