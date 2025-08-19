@@ -1,8 +1,6 @@
-export type PizzaSizePricing = {
-  small: number;
-  medium: number;
-  large: number;
-};
+export type PizzaSizes = 'small' | 'medium' | 'large';
+
+export type PizzaSizePricing = Record<PizzaSizes, number>;
 
 export type PizzaSpecialty = {
   id: number;
